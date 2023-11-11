@@ -20,7 +20,7 @@ public class GrassType extends Monster{
          System.out.println(this.name + "'s health is now " + this.hp);
     }
       
-    public void rest(){ // is this rest or restore health?
+    public void rest(){ 
         this.hp += 0.50*maxHP;
         System.out.println(name + "'s health is now " + this.hp);
     }
