@@ -19,7 +19,7 @@ public class GrassType extends Monster implements Interactive{
          System.out.println(this.name + "'s health is now " + this.hp);
     }
       
-    public void rest(){ // is this rest or restore health?
+    public void rest(){ 
         this.hp += 0.50*maxHP;
         System.out.println(this.name + " did a pose. " + this.name + "'s health is now " + this.hp);
     }
