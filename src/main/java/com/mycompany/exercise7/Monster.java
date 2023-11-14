@@ -71,12 +71,14 @@ public abstract class Monster implements Interactive {
     }
 
     public abstract void special();
+    
+    public void interact(){
+       System.out.println("It's " + this.name + ". It seems to be a " + this.type + " type.");
+    }
 
     public void restoreHealth(){
         hp = maxHP;
     }
-    
-    
 
 }
 

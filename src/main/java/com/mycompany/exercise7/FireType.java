@@ -8,7 +8,7 @@ package com.mycompany.exercise7;
  *
  * @author HP
  */
-public class FireType extends Monster implements Interactive{
+public class FireType extends Monster {
     
     public FireType(String n, int base, int hp){
         super(n, "fire", "grass", "water", hp, base);
@@ -23,7 +23,4 @@ public class FireType extends Monster implements Interactive{
             System.out.println(this.name + " did a pose. " + this.name + "'s attack increased by 2! But their health is now " + this.hp);
         }
         
-    public void interact(){
-       System.out.println("It's " + this.name + ". It seems to be a " + this.type + " type.");
-    }
 }

@@ -8,7 +8,7 @@ package com.mycompany.exercise7;
  *
  * @author HP
  */
-public class GrassType extends Monster implements Interactive{
+public class GrassType extends Monster{
       public GrassType(String n, int base, int hp){
         super(n, "grass", "water", "fire", hp, base);
     }
@@ -23,8 +23,5 @@ public class GrassType extends Monster implements Interactive{
         this.hp += 0.50*maxHP;
         System.out.println(this.name + " did a pose. " + this.name + "'s health is now " + this.hp);
     }
-    
-    public void interact(){
-       System.out.println("It's " + this.name + ". It seems to be a " + this.type + " type.");
-    }
+
 }
